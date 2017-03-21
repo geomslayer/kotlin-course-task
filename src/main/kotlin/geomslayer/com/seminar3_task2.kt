@@ -1,5 +1,10 @@
 package geomslayer.com
 
-/**
- * Created by geomslayer on 20.03.17.
- */
+fun main(args: Array<String>) {
+    val str = "abacaba"
+    println(if (isPalindrome(str)) "Yes" else "No")
+}
+
+fun isPalindrome(str: String): Boolean {
+    return str == str.reversed()
+}
